@@ -3,9 +3,11 @@
     <tspan id="browserName" font-weight="bold">yess</tspan>
   </text>
   <style>
-    tspan {
-      stroke: red;
-      fill: red;
+    @media (orientation: landscape) {
+      tspan {
+        stroke: red;
+        fill: red;
+      }
     }
   </style>
 </svg>
