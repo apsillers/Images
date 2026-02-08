@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100">
+  <text x="10" y="40" font-family="Arial" font-size="20">
+    Browser: 
+    <tspan id="browserName" font-weight="bold"></tspan>
+  </text>
+  <script><![CDATA[
+    var nAgt = navigator.userAgent;
+    var browserName = navigator.appName;
+    
+    // Simple detection logic
+    if (nAgt.indexOf("Firefox") != -1) browserName = "Mozilla Firefox";
+    else if (nAgt.indexOf("Chrome") != -1) browserName = "Google Chrome";
+    else if (nAgt.indexOf("Safari") != -1) browserName = "Apple Safari";
+    else if (nAgt.indexOf("Edg") != -1) browserName = "Microsoft Edge";
+    
+    document.getElementById('browserName').textContent = browserName;
+  ]]></script>
+</svg>
