@@ -4,7 +4,8 @@
   </text>
   <style>
     tspan {
-      color: red;
+      stroke: red;
+      fill: red;
     }
   </style>
 </svg>
